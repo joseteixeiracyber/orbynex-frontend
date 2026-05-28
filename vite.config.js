@@ -6,6 +6,8 @@ export default defineConfig({
   plugins: [react(), tailwindcss()],
   server: {
     host: true,
-    allowedHosts: ['orbynex.com.br']
+    allowedHosts: ['orbynex.com.br',
+  'www.orbynex.com.br',
+  'app.orbynex.com.br']
   }
 });
