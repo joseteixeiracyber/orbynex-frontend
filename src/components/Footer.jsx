@@ -1,54 +1,114 @@
 // src/components/Footer.jsx
+
+import Logo from "../img/Logo.png";
+
 export default function Footer() {
   return (
     <footer className="border-t border-white/10 bg-[#070B14] px-6 lg:px-16 py-12">
-      <div className="max-w-7xl mx-auto grid gap-10 lg:grid-cols-5">
-        <div className="lg:col-span-2">
-          <div className="flex items-center gap-3 mb-5">
-            <div className="w-9 h-9 rounded-full bg-gradient-to-br from-[#00E5FF] to-[#7C3AED]" />
-            <span className="text-2xl tracking-[0.35em] font-semibold">
-              ORBYNEX
-            </span>
+      <div className="max-w-7xl mx-auto grid gap-12 lg:grid-cols-5">
+        
+        {/* LOGO + DESCRIÇÃO */}
+        <div className="lg:col-span-2 flex flex-col justify-start">
+          
+          <div className="flex items-center mb-8">
+            <img
+              src={Logo}
+              alt="Orbynex"
+              className="
+                h-16
+                md:h-20
+                lg:h-24
+                w-auto
+                object-contain
+                select-none
+              "
+            />
           </div>
 
-          <p className="text-gray-400 max-w-sm">
-            O ecossistema inteligente que conecta empresas e pessoas em uma
-            gestão mais simples, inteligente e completa.
+          <p className="text-gray-400 max-w-md leading-8 text-lg">
+            O ecossistema inteligente que conecta empresas e pessoas
+            em uma gestão mais simples, inteligente e completa.
           </p>
         </div>
 
+        {/* PRODUTO */}
         <div>
-          <h4 className="font-semibold mb-4">Produto</h4>
-          <ul className="space-y-3 text-gray-400 text-sm">
-            <li>Recursos</li>
-            <li>Módulos</li>
-            <li>Integrações</li>
-            <li>Novidades</li>
+          <h4 className="font-semibold mb-5 text-white">
+            Produto
+          </h4>
+
+          <ul className="space-y-4 text-gray-400 text-sm">
+            <li className="hover:text-white transition cursor-pointer">
+              Recursos
+            </li>
+
+            <li className="hover:text-white transition cursor-pointer">
+              Módulos
+            </li>
+
+            <li className="hover:text-white transition cursor-pointer">
+              Integrações
+            </li>
+
+            <li className="hover:text-white transition cursor-pointer">
+              Novidades
+            </li>
           </ul>
         </div>
 
+        {/* SOLUÇÕES */}
         <div>
-          <h4 className="font-semibold mb-4">Soluções</h4>
-          <ul className="space-y-3 text-gray-400 text-sm">
-            <li>Para Empresas</li>
-            <li>Para Profissionais</li>
-            <li>Para Pessoas</li>
-            <li>Por Segmento</li>
+          <h4 className="font-semibold mb-5 text-white">
+            Soluções
+          </h4>
+
+          <ul className="space-y-4 text-gray-400 text-sm">
+            <li className="hover:text-white transition cursor-pointer">
+              Para Empresas
+            </li>
+
+            <li className="hover:text-white transition cursor-pointer">
+              Para Profissionais
+            </li>
+
+            <li className="hover:text-white transition cursor-pointer">
+              Para Pessoas
+            </li>
+
+            <li className="hover:text-white transition cursor-pointer">
+              Por Segmento
+            </li>
           </ul>
         </div>
 
+        {/* EMPRESA */}
         <div>
-          <h4 className="font-semibold mb-4">Empresa</h4>
-          <ul className="space-y-3 text-gray-400 text-sm">
-            <li>Sobre nós</li>
-            <li>Carreiras</li>
-            <li>Blog</li>
-            <li>Contato</li>
+          <h4 className="font-semibold mb-5 text-white">
+            Empresa
+          </h4>
+
+          <ul className="space-y-4 text-gray-400 text-sm">
+            <li className="hover:text-white transition cursor-pointer">
+              Sobre nós
+            </li>
+
+            <li className="hover:text-white transition cursor-pointer">
+              Carreiras
+            </li>
+
+            <li className="hover:text-white transition cursor-pointer">
+              Blog
+            </li>
+
+            <li className="hover:text-white transition cursor-pointer">
+              Contato
+            </li>
           </ul>
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto mt-10 pt-6 border-t border-white/10 text-center text-gray-500 text-sm">
+      {/* COPYRIGHT */}
+      <div className="max-w-7xl mx-auto mt-12 pt-6 border-t border-white/10 text-center text-gray-500 text-sm">
         © 2026 Orbynex. Todos os direitos reservados.
       </div>
     </footer>
