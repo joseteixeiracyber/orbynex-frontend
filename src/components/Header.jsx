@@ -7,9 +7,7 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-6 lg:px-16 h-20 flex items-center justify-between">
         <div className="flex items-center gap-3">
           <div className="w-9 h-9 rounded-full bg-gradient-to-br from-[#00E5FF] to-[#7C3AED]" />
-          <span className="text-2xl tracking-[0.35em] font-semibold">
-            ORBYNEX
-          </span>
+          <img src="./img/logo.png" alt="Orbynex" className="h-6" />
         </div>
 
         <nav className="hidden lg:flex items-center gap-8 text-sm text-gray-300">
