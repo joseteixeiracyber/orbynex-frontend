@@ -1,5 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
+import ScrollToTop from "./components/ScrollToTop";
+
 import Home from "./pages/Home";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermsOfUse from "./pages/TermsOfUse";
@@ -7,6 +9,9 @@ import TermsOfUse from "./pages/TermsOfUse";
 export default function App() {
   return (
     <BrowserRouter>
+
+      <ScrollToTop />
+
       <Routes>
         <Route path="/" element={<Home />} />
 
@@ -20,6 +25,7 @@ export default function App() {
           element={<TermsOfUse />}
         />
       </Routes>
+
     </BrowserRouter>
   );
 }
