@@ -1,6 +1,7 @@
 // src/components/Footer.jsx
 
 import Logo from "../img/Logo.png";
+import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
@@ -103,8 +104,18 @@ export default function Footer() {
             <li className="hover:text-white transition cursor-pointer">
               Contato
             </li>
-          </ul>
-        </div>
+            <li className="hover:text-white transition cursor-pointer">
+              <Link to="/politica-de-privacidade"className="hover:text-white transition">
+                Privacidade
+              </Link>
+            </li>
+            <li className="hover:text-white transition cursor-pointer">
+              <Link to="/termos-de-uso"className="hover:text-white transition">
+                Termos de Uso
+              </Link>
+            </li>
+             </ul>
+            </div>
       </div>
 
       {/* COPYRIGHT */}
