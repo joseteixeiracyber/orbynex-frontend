@@ -40,19 +40,27 @@ export default function Footer() {
 
           <ul className="space-y-4 text-gray-400 text-sm">
             <li className="hover:text-white transition cursor-pointer">
+              <Link to="/recursos" className="hover:text-white transition">
               Recursos
+              </Link>
             </li>
 
             <li className="hover:text-white transition cursor-pointer">
-              Módulos
+              <Link to="/modulos" className="hover:text-white transition">
+              Modulos
+              </Link>
             </li>
 
             <li className="hover:text-white transition cursor-pointer">
+              <Link to="/integracoes" className="hover:text-white transition" >
               Integrações
+              </Link>
             </li>
 
             <li className="hover:text-white transition cursor-pointer">
+              <Link to="/novidades" className="hover:text-white transition">
               Novidades
+              </Link>
             </li>
           </ul>
         </div>
@@ -65,19 +73,28 @@ export default function Footer() {
 
           <ul className="space-y-4 text-gray-400 text-sm">
             <li className="hover:text-white transition cursor-pointer">
-              Para Empresas
+              <Link to="/solucoes-para-empresas"className="hover:text-white transition">
+                Para Empresas
+              </Link>
             </li>
 
             <li className="hover:text-white transition cursor-pointer">
-              Para Profissionais
+              
+              <Link to="/solucoes-para-profissionais"className="hover:text-white transition">
+                Para Profissionais
+              </Link>
             </li>
 
             <li className="hover:text-white transition cursor-pointer">
-              Para Pessoas
+              <Link to="/solucoes-para-pessoas" className="hover:text-white transition">
+                Para Pessoas
+              </Link>
             </li>
 
             <li className="hover:text-white transition cursor-pointer">
-              Por Segmento
+              <Link to="/solucoes-por-segmento" className="hover:text-white transition">
+                Por Segmento
+              </Link>
             </li>
           </ul>
         </div>
@@ -86,6 +103,7 @@ export default function Footer() {
         <div>
           <h4 className="font-semibold mb-5 text-white">
             Empresa
+            
           </h4>
 
           <ul className="space-y-4 text-gray-400 text-sm">
