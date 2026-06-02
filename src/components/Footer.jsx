@@ -90,19 +90,15 @@ export default function Footer() {
 
           <ul className="space-y-4 text-gray-400 text-sm">
             <li className="hover:text-white transition cursor-pointer">
-              Sobre nós
+              <Link to="/sobre-nos"className="hover:text-white transition">
+                Sobre nós
+              </Link>
             </li>
 
             <li className="hover:text-white transition cursor-pointer">
-              Carreiras
-            </li>
-
-            <li className="hover:text-white transition cursor-pointer">
-              Blog
-            </li>
-
-            <li className="hover:text-white transition cursor-pointer">
-              Contato
+              <Link to="/contato"className="hover:text-white transition">
+                Contato
+              </Link>
             </li>
             <li className="hover:text-white transition cursor-pointer">
               <Link to="/politica-de-privacidade"className="hover:text-white transition">
