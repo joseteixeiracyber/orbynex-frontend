@@ -8,6 +8,10 @@ export default defineConfig({
     host: true,
     allowedHosts: ['orbynex.com.br',
   'www.orbynex.com.br',
-  'app.orbynex.com.br']
+  'app.orbynex.com.br',
+'mercado.orbynex.com.br',
+'www.mercado.orbynex.com.br',
+'dev.orbynex.com.br',
+'www.dev.orbynex.com.br']
   }
 });
